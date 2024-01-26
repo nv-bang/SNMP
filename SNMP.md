@@ -149,12 +149,13 @@ II. **SNMP hoạt động như thế nào**:
   ```
 2. Cấu hình SNMP cho thiết bị mạng Cisco
 - ví dụ cấu hình SNMPv2c cho một thiết bị Cisco
+  ```
      snmp-server community <community-string> RO
+  ```
 - Ví dụ cấu hình SNMP cho một thiết bị Cisco sử dụng giao thức SNMPv3
+ ```
      snmp-server group <group-name> v3 priv
      snmp-server user <username> <group-name> v3 auth sha <auth-password> priv aes 128 <encryption-password>
-     <group-name> là tên của nhóm SNMP. Bạn có thể đặt tên bất kỳ cho nhóm này.
-<username> là tên người dùng SNMP.
-<auth-password> là mật khẩu dùng để xác thực (authentication password). Đây là mật khẩu sử dụng trong quá trình xác thực HMAC-SHA-1.
-<encryption-password> là mật khẩu dùng để mã hóa (encryption password). Đây là mật khẩu sử dụng trong quá trình mã hóa dữ liệu AES-128.
+```
+ 
 
