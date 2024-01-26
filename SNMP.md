@@ -40,7 +40,7 @@ II. **SNMP hoạt động như thế nào**:
 
   - Trong các ứng dụng của SNMP, một hoặc nhiều máy tính quản trị được gọi là các máy managers có nhiệm vụ giám sát hoặc quản lý một nhóm máy chủ hoặc thiết bị trên mạng máy tính. Mỗi hệ thống được quản lý được gọi là một agent báo cáo thông tin thông qua SNMP cho máy manager.
 
-  <img src= https://i.imgur.com/IVTEvyT.png >
+&ensp;&ensp;&ensp;&ensp;  <img src= https://i.imgur.com/IVTEvyT.png >
 
   - Hệ thống SNMP bao gồm 2 thành phần chính:
 
