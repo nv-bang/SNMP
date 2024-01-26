@@ -161,12 +161,12 @@ II. **SNMP hoạt động như thế nào**:
 3. Ví dụ truy vấn snmp đến thiết bị
 
 ```
-snmpget -v2c -cpublic 10.1.1.1 SNMPv2-MIB::sysLocation.0
+snmpget -v2c -c@snmp 10.1.1.1 SNMPv2-MIB::sysLocation.0
 ```
 
 
 - `snmpget`: Là câu lệnh SNMP để lấy giá trị của một biến SNMP từ một thiết bị.
 - `-v2c`: Đặc tả phiên bản SNMP sử dụng, trong trường hợp này là SNMPv2c (Community-based SNMPv2).
-- `-cpublic`: Chuỗi xác thực cộng đồng (community string) được sử dụng để xác thực yêu cầu SNMP. Trong ví dụ này, chuỗi xác thực cộng đồng là "public".
+- `-c@snmp`: Chuỗi xác thực cộng đồng (community string) được sử dụng để xác thực yêu cầu SNMP. Trong ví dụ này, chuỗi xác thực  là "@snmp".
 - `10.1.1.1`: Địa chỉ IP của thiết bị mạng mà bạn muốn truy vấn thông tin SNMP.
 - `SNMPv2-MIB::sysLocation.0`: Định danh của biến SNMP mà bạn muốn lấy giá trị. Trong ví dụ này, biến `sysLocation` trong MIB (Management Information Base) `SNMPv2-MIB` với chỉ số 0 (`sysLocation.0`).
