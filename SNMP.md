@@ -3,6 +3,7 @@
 I. **SNMP là gì?**
 
   - SNMP là một giao thức tầng ứng dụng quy định bởi IAB trong RFC1157 để trao đổi thông tin quản lý giữa các thiết bị mạng.
+  - SNMP là một giao thức tiêu chuẩn được sử dụng rộng rãi để quản lý và giám sát các thiết bị mạng
 
   - SNMP là một tập hợp các giao thức không chỉ cho phép kiểm tra tài nguyên và giám sát lưu lượng các thiết bị mạng như router,switch hay server đang vận hành mà còn hỗ trợ vận hành các thiết bị này một cách tối ưu. Ngoài ra SNMP còn cho phép quản lý các thiết bị mạng từ xa/
 
