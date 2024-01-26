@@ -81,7 +81,7 @@ II. **SNMP hoạt động như thế nào**:
   <img src=https://i.imgur.com/Kh6J4FN.jpg>
 
 
-  III. **Cấu hình và cài đặt Cacti**
+  III. **Cấu hình và cài đặt SNMP**
 
   - Môi trường cài đặt : VMware
 
@@ -118,81 +118,4 @@ II. **SNMP hoạt động như thế nào**:
   systemctl restart snmpd
   ```
 
-2.  ** Config máy manager**
 
-  - Tiến hành cài đặt snmp và cacti:
-
-  ```
-  apt-get -y install cacti snmp snmpd snmp-mibs-downloader php-mysql php-snmp rrdtool
-  ```
-
-  - Commend dòng mibs trong snmp.conf để chấp nhận Manager import MIB file
-
-  ```
-  root@agent:~# vim /etc/snmp/snmp.conf
-  #mibs
-  ```
-  - Config file /etc/snmp/snmp.conf
-
-  ```
-  # line 4: comment out
-  #mibs
-  ```
-  - Config /etc/snmp/snmpd.conf
-
-  ```
-  # line 49: uncomment and change to any comunity name you like
-  rocommunity Serverworld localhost
-  # line 51: comment out
-  #rocommunity public default -V systemonly
-  ```
-  - Restart Service
-
-  - Trên giao diên web 10.0.0.135/cacti tiến hành config tạo device thông tin như sau
-
-  <img src=https://i.imgur.com/oxY9uRm.png>
-
-  - Vào graph tree tạo tree items
-
-  <img src=https://i.imgur.com/nZgRoex.png>
-
-  - Vào new graph tạo Graph và kết quả ta đã có graph ( config hiện thị ở thanh toolbar ngay trên)
-
-  <img src= https://i.imgur.com/y2c7QgM.png >
-  
-  - Có vẻ như cacti poll mỗi 5ph/1 lần, để chỉnh về ngắn hơn khả năng là khá khó 
-
-3. Cấu hình arlet đến mail
-
-  - Cài đặt các plugin :
-
-  ```
-  $ wget http://docs.cacti.net/_media/plugin:settings-v0.71-1.tgz
-  $ wget http://docs.cacti.net/_media/plugin:thold-v0.5.0.tgz
-  $ mv plugin:settings-v0.71-1.tgz settings-v0.71-1.tgz
-  $ mv plugin:thold-v0.5.0.tgz thold-v0.5.0.tgz
-  $ tar zxf settings-v0.71-1.tgz
-  $ tar zxf thold-v0.5.0.tgz
-  ```
-
-  - Vào giao diện web chạy các plugin ấy, vào setting/ tab mail/dns config như sau
-
-  <img src=https://i.imgur.com/VGb5eFe.png>
-
-  - Save lại và thử test  email
-
-  <img src=https://i.imgur.com/ktr30uc.png>
-  
-  - Cấu hình threshold và noti để setting các arlet sẽ gửi mail
-
-3. Cấu hình PRTG monitoring linux server 
-
-  - Mô hình giống phần cacti
-
-  - hiện tại cấu hình chưa ra đồ thị, đang theo dõi thêm
-
-<img src=https://i.imgur.com/92gUL3x.png>
-
-  - Update sáng nay dậy đã lên đồ thị
-  
- <img src=https://i.imgur.com/dVnEhSM.png>
