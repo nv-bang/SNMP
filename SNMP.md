@@ -45,13 +45,13 @@ I. **SNMP là gì?**
 
 | Phiên bản | Ưu điểm                                                                           | Nhược điểm                                                                                      |
 |-----------|-----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
-| SNMPv1    | - Đơn giản và dễ triển khai | - Xác thực cộng đồng yếu |
+| SNMPv1    | - Đơn giản và dễ triển khai | - Xác thực yếu (community string) |
 |           | - Tiêu chuẩn hóa và tương thích rộng rãi                                           | - Không cung cấp tính năng mã hóa dữ liệu                                                       |
 |           | - Quản lý và điều khiển thiết bị hạn chế                                                                            
-| SNMPv2c   | - Cải tiến so với SNMPv1, bổ sung mô hình quản lý và phương thức mới                | - Xác thực cộng đồng yếu                                                                       |
+| SNMPv2c   | - Cải tiến so với SNMPv1, bổ sung mô hình quản lý và phương thức mới                | - Xác thực yếu                                                                       |
 |           | - Tiêu chuẩn hóa và tương thích rộng rãi                                           | - Không cung cấp tính năng mã hóa dữ liệu                                                       |
 |           | - Quản lý và điều khiển thiết bị hạn chế                                            |
-| SNMPv2u   | - Cải tiến liên quan đến quản lý nhóm và đối tượng                                | - Xác thực cộng đồng yếu                                                                       |
+| SNMPv2u   | - Cải tiến liên quan đến quản lý nhóm và đối tượng                                | - Xác thực yếu                                                                       |
 |           | - Quản lý và điều khiển thiết bị hạn chế                                            | - Không cung cấp tính năng mã hóa dữ liệu                                                       |
 | SNMPv3    | - Cung cấp cải tiến đáng kể về bảo mật, hỗ trợ xác thực và mã hóa dữ liệu           | - Định dạng thông điệp phức tạp hơn                                                             |
 |           | - Hỗ trợ xác thực mạnh hơn như HMAC và mã hóa dữ liệu bằng DES, AES                  | - Yêu cầu cấu hình và triển khai phức tạp hơn                                                    |
