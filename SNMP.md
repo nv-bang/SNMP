@@ -28,6 +28,19 @@ I. **SNMP là gì?**
 
   - SNMP bao gồm một bộ các tiêu chuẩn để quản lý mạng, bao gồm một giao thức lớp ứng dụng, một giản đồ cơ sở dữ liệu, và một tập các data objects
 
+| Ứng dụng                             | Mô tả                                                         |
+|-------------------------------------|----------------------------------------------------------------|
+| Cisco Prime Infrastructure           | Hệ thống quản lý mạng toàn diện của Cisco                       |
+| SolarWinds Network Performance Monitor | Giám sát và quản lý hiệu suất mạng                            |
+| PRTG Network Monitor                 | Giám sát mạng và hệ thống tương thích với SNMP                   |
+| Zabbix                              | Giám sát và quản lý mạng và hệ thống tương thích với SNMP       |
+| Nagios                              | Giám sát hệ thống và mạng tương thích với SNMP                   |
+| ManageEngine OpManager               | Phần mềm quản lý mạng và giám sát                                 |
+| Paessler Router Traffic Grapher      | Giám sát lưu lượng mạng và thiết bị tương thích với SNMP          |
+| IBM Tivoli Network Manager           | Hệ thống quản lý mạng của IBM                                    |
+| HP OpenView Network Node Manager     | Hệ thống quản lý và giám sát mạng của HP                          |
+| Juniper Networks Network Director    | Hệ thống quản lý mạng của Juniper Networks                        |
+
 II. **SNMP hoạt động như thế nào**:
 
   - Có 2 phương pháp giám sát là poll và alert
