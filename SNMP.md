@@ -124,7 +124,7 @@ II. **SNMP hoạt động như thế nào**:
   - Cài đặt các package:
 
   ```
-  apt-get -y install snmp snmpd snmp-mibs-downloader
+  apt-get -y install snmp snmpd snmp-mibs-downloader net-snmp net-snmp-utils
   ```
 
   - Config file /etc/snmp/snmpd.conf
